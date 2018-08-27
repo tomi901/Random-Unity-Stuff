@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 1235040479
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 901b705ce7f3a3d2905527c9ee47c67e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2b5cdb2dcb8acad7b5554db263e14800
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 329
+  Script: {instanceID: 0}
+Assets:
+- Assets/LoadAssets/Images/pRnucMs.jpg
+- Assets/LoadAssets/Images/a4yx8tqb.bmp
+- Assets/LoadAssets/Images/8lc5o925.bmp
+- Assets/LoadAssets/Images/5njcwjl5.bmp
+- Assets/LoadAssets/Images/3aj0d1or.bmp
+- Assets/LoadAssets/Barrel Roll Song.mp3
+- Assets/LoadAssets/xp sound.wav
+- Assets/LoadAssets/Images/h101w8zg.bmp
+- Assets/LoadAssets/YGOTAS Episode 1 - Pilot - LittleKuriboh.mp4
+- Assets/LoadAssets/Images/maxresdefault.jpg
+- Assets/LoadAssets/Images/hqdefault.jpg
+- Assets/LoadAssets/Images/0zk7n3ed.bmp
+- Assets/LoadAssets/Images/if8x3rrl.bmp
+- Assets/LoadAssets/respin -Do the MeCHrio Time.mp3
+- Assets/LoadAssets/Popcorn.mp3
+- Assets/LoadAssets/Images/Kakuna_Rattata.jpg
+Dependencies: []
