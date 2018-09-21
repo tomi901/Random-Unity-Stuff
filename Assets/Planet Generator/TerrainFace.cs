@@ -7,9 +7,9 @@ public class TerrainFace
     public const int minResolution = 2;
     public const int maxResolution = 256;
 
-    readonly Mesh mesh;
+    private readonly Mesh mesh;
 
-    int resolution = 2;
+    private int resolution = 2;
     public int Resolution
     {
         get { return resolution; }
@@ -19,12 +19,17 @@ public class TerrainFace
         }
     }
 
-    readonly Vector3 localUp;
-    readonly Vector3 tangent;
-    readonly Vector3 biTangent;
+    private readonly Vector3 localUp;
+    private readonly Vector3 tangent;
+    private readonly Vector3 biTangent;
 
-    public TerrainFace(Mesh mesh, int resolution, Vector3 localUp)
+    private readonly ShapeGenerator shapeGenerator;
+
+
+    public TerrainFace(ShapeGenerator shapeGenerator, Mesh mesh, int resolution, Vector3 localUp)
     {
+        this.shapeGenerator = shapeGenerator;
+
         this.Resolution = resolution;
         resolution = this.Resolution;
 
@@ -53,7 +58,7 @@ public class TerrainFace
                 Vector3 pointOnUnitCube = localUp + 
                     (percent.x - .5f) * 2 * tangent +
                     (percent.y - .5f) * 2 * biTangent;
-                vertices[i] = pointOnUnitCube.normalized;
+                vertices[i] = shapeGenerator.CalculatePointOnPlanet(pointOnUnitCube.normalized);
 
                 if (x < faceResolution && y < faceResolution)
                 {
@@ -70,7 +75,10 @@ public class TerrainFace
             mesh.Clear();
             mesh.vertices = vertices;
             mesh.triangles = triangles;
-            mesh.normals = vertices;
+
+            mesh.RecalculateBounds();
+            mesh.RecalculateNormals();
+            mesh.RecalculateTangents();
         }
     }
 	

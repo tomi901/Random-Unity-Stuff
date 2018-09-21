@@ -2,29 +2,29 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Temp/Assembly-CSharp-firstpass.dll"
+-out:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Temp/Assembly-CSharp-firstpass.dll"
 -nostdlib
 -unsafe
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Entities.Properties.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Properties.Codegen.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Jobs.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Jobs.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Entities.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Properties.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Collections.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Burst.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Properties.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Mathematics.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Entities.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Transforms.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Burst.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.Properties.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Properties.Codegen.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Jobs.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Jobs.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Properties.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Collections.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Burst.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Properties.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Mathematics.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Transforms.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Burst.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -93,8 +93,8 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
 -r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
--r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.3/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
@@ -305,12 +305,12 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/Awaiters.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/AwaitExtensions.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/IEnumeratorAwaitExtensions.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/Internal/AsyncCoroutineRunner.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/Internal/SyncContextUtil.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/TaskExtensions.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/WaitForBackgroundThread.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Test/Assets/Plugins/AsyncAwaitUtil/Source/WaitForUpdate.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/Awaiters.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/AwaitExtensions.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/IEnumeratorAwaitExtensions.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/Internal/AsyncCoroutineRunner.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/Internal/SyncContextUtil.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/TaskExtensions.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/WaitForBackgroundThread.cs"
+-i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/WaitForUpdate.cs"
 -v:0

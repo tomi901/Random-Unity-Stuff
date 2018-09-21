@@ -4,7 +4,7 @@
 public class Planet : MonoBehaviour
 {
 
-    static readonly Vector3[] directions =
+    private static readonly Vector3[] directions =
     {
         Vector3.up,
         Vector3.down,
@@ -14,12 +14,24 @@ public class Planet : MonoBehaviour
         Vector3.back,
     };
 
-    [Range(TerrainFace.minResolution, TerrainFace.maxResolution)]
-    public int resolution = 2;
+    [Range(TerrainFace.minResolution, TerrainFace.maxResolution), SerializeField]
+    private int resolution = 2;
+    [SerializeField]
+    private bool autoUpdate = false;
+
+    [SerializeField]
+    private ColorSettings colorSettings;
+    public ColorSettings GetColorSettings { get { return colorSettings; } }
+
+    [SerializeField]
+    private ShapeSettings shapeSettings;
+    public ShapeSettings GetShapeSettings { get { return shapeSettings; } }
 
     [SerializeField, HideInInspector]
-    MeshFilter[] meshFilters;
-    TerrainFace[] terrainFaces;
+    private MeshFilter[] meshFilters;
+    private TerrainFace[] terrainFaces;
+
+    private ShapeGenerator shapeGenerator;
 
     private void OnValidate()
     {
@@ -27,8 +39,17 @@ public class Planet : MonoBehaviour
         GenerateMesh();
     }
 
-    void Initialize()
+    public void GeneratePlanet()
     {
+        Initialize();
+        GenerateMesh();
+        GenerateColors();
+    }
+
+    private void Initialize()
+    {
+        shapeGenerator = new ShapeGenerator(shapeSettings);
+
         if (meshFilters == null || meshFilters.Length == 0)
         {
             meshFilters = new MeshFilter[directions.Length];
@@ -51,17 +72,47 @@ public class Planet : MonoBehaviour
 
             if (terrainFaces[i] == null)
             {
-                terrainFaces[i] = new TerrainFace(meshFilters[i].sharedMesh, resolution, directions[i]);
+                terrainFaces[i] = new TerrainFace(shapeGenerator, meshFilters[i].sharedMesh, resolution, directions[i]);
             }
             else terrainFaces[i].Resolution = resolution;
         }
     }
 
-    void GenerateMesh()
+
+    public void OnShapeSettingsUpdated()
+    {
+        if (autoUpdate)
+        {
+            Initialize();
+            GenerateMesh();
+        }
+    }
+
+    public void OnColorSettingsUpdated()
+    {
+        if (autoUpdate)
+        {
+            Initialize();
+            GenerateColors();
+        }
+    }
+
+
+    private void GenerateMesh()
     {
         foreach (TerrainFace face in terrainFaces)
         {
             face.ConstructMesh();
+        }
+    }
+
+    private void GenerateColors()
+    {
+        if (colorSettings == null) return;
+
+        foreach (MeshFilter meshFilter in meshFilters)
+        {
+            meshFilter.GetComponent<MeshRenderer>().sharedMaterial.color = colorSettings.GetColor;
         }
     }
 
