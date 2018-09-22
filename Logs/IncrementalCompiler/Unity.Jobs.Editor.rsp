@@ -306,5 +306,6 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-d:UNITY_POST_PROCESSING_STACK_V2
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.jobs@0.0.7-preview.3/Editor/JobsMenu.cs
 -v:0

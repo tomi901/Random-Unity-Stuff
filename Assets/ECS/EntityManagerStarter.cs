@@ -8,6 +8,7 @@ public class EntityManagerStarter : MonoBehaviour
 {
 
     private EntityManager entityManager;
+    public EntityManager Manager => entityManager;
 
 
     private void Awake()

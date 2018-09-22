@@ -303,6 +303,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-d:UNITY_POST_PROCESSING_STACK_V2
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.burst@0.2.4-preview.24/Runtime/BurstCompileAttribute.cs
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.burst@0.2.4-preview.24/Runtime/BurstCompiler.cs
 -v:0

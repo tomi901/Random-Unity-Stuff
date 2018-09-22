@@ -306,6 +306,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-d:UNITY_POST_PROCESSING_STACK_V2
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.11/Unity.Entities.Hybrid/AssemblyInfo.cs
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.11/Unity.Entities.Hybrid/EntityManagerExtensions.cs
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.11/Unity.Entities.Hybrid/GameObjectEntity.cs

@@ -11,18 +11,25 @@ public class PolarCoordsTransform : MonoBehaviour
 
     [SerializeField]
     private float separation = 0f;
+    public virtual float Separation { get { return separation; } }
+
+    private Vector3 relativePos;
+    public Vector3 RelativePosition => relativePos;
+    public Vector3 WorldPosition => transform.position;
+
 
     private void UpdatePosition()
     {
         Tower tower = Tower.Instance;
-        float distance = tower.Radius + separation;
+        float distance = tower.Radius + Separation;
 
-        transform.position = coords.GetPosition(distance) + tower.transform.position;
+        relativePos = coords.GetPosition(distance);
+        transform.position = tower.transform.position + RelativePosition;
     }
 
     public void Translate(Vector2 movement)
     {
-        movement.x /= Tower.GetRadius + separation;
+        movement.x /= Tower.GetRadius + Separation;
         Coordinates += movement;
     }
 
@@ -40,11 +47,9 @@ public class PolarCoordsTransform : MonoBehaviour
 public struct PolarCoords
 {
 
-    private const float PI2 = Mathf.PI * 2f;
-
     [SerializeField]
     private float radAngle;
-    public float RadAngle { get { return radAngle; } set { radAngle = value; ClampAngle(); } }
+    public float RadAngle { get { return radAngle; } set { radAngle = Radian.Clamp(value); } }
     public float DegAngle { get { return radAngle * Mathf.Deg2Rad; } set { RadAngle = value * Mathf.Rad2Deg; } }
 
     [SerializeField]
@@ -57,14 +62,9 @@ public struct PolarCoords
     }
     private PolarCoords(float radAngle, float height, bool check)
     {
-        if (check) radAngle %= PI2;
+        if (check) radAngle = Radian.Clamp(radAngle);
         this.radAngle = radAngle;
         this.height = height;
-    }
-
-    public void ClampAngle()
-    {
-        radAngle %= PI2;
     }
 
     public Vector3 GetPosition(float xzDistance = 1f)
@@ -77,6 +77,36 @@ public struct PolarCoords
         this.RadAngle += rads;
         this.height += height;
     }
+
+    public static PolarCoords Lerp(PolarCoords from, PolarCoords to, float t)
+    {
+        return LerpUnclamped(from, to, Mathf.Clamp01(t));
+    }
+    public static PolarCoords LerpUnclamped(PolarCoords from, PolarCoords to, float t)
+    {
+        return new PolarCoords(
+            Radian.Lerp(from.radAngle, to.radAngle, t), 
+            Mathf.LerpUnclamped(from.height, to.height, t), 
+            false
+            );
+    }
+
+
+    public static PolarCoords SmoothDamp(PolarCoords from, PolarCoords to, ref PolarCoords currentVelocity,
+    float smoothTime)
+    {
+        return SmoothDamp(from, to, ref currentVelocity, smoothTime, Time.deltaTime);
+    }
+    public static PolarCoords SmoothDamp(PolarCoords from, PolarCoords to, ref PolarCoords currentVelocity, 
+        float smoothTime, float deltaTime)
+    {
+        return new PolarCoords(
+            Radian.SmoothDamp(from.radAngle, to.radAngle, ref currentVelocity.radAngle, smoothTime, deltaTime),
+            Mathf.SmoothDamp(from.height, to.height, ref currentVelocity.height, smoothTime, Mathf.Infinity, deltaTime),
+            false
+            );
+    }
+
 
     public static PolarCoords operator +(PolarCoords lhs, Vector2 rhs)
     {

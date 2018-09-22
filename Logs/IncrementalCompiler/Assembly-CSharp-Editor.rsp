@@ -90,6 +90,8 @@
 -r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Burst.Editor.dll"
 -r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
 -r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
@@ -330,6 +332,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-d:UNITY_POST_PROCESSING_STACK_V2
 -i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Editor/EditorNavMesh.cs"
 -i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/Editor/EditorPlanet.cs"
 -v:0

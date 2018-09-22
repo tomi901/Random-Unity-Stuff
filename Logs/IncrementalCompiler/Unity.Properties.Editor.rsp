@@ -306,6 +306,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-d:UNITY_POST_PROCESSING_STACK_V2
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpContainerGenerator.cs
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpGenerationBackend.cs
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpGenerationCache.cs

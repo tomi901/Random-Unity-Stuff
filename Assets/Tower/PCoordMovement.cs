@@ -7,6 +7,9 @@ public class PCoordMovement : MonoBehaviour
     [SerializeField]
     private float speed = 3f;
 
+    [SerializeField]
+    private float moveDamp = 10f;
+
     private Vector2 currentVelocity;
 
     private PolarCoordsTransform pcTransform;
@@ -18,8 +21,10 @@ public class PCoordMovement : MonoBehaviour
 
     private void Update()
     {
-        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        pcTransform.Translate(input * speed * Time.deltaTime);
+        currentVelocity = Vector2.Lerp(currentVelocity,
+            new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed,
+            moveDamp * Time.smoothDeltaTime);
+        pcTransform.Translate(currentVelocity * Time.deltaTime);
     }
 
 }

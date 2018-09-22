@@ -303,6 +303,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-d:UNITY_POST_PROCESSING_STACK_V2
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@0.0.12-preview.13/Unity.Mathematics/bool2.gen.cs
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@0.0.12-preview.13/Unity.Mathematics/bool2x2.gen.cs
 -i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@0.0.12-preview.13/Unity.Mathematics/bool2x3.gen.cs

@@ -2,9 +2,10 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Temp/Assembly-CSharp.dll"
+-out:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Temp/Unity.Postprocessing.Editor.dll"
 -nostdlib
 -unsafe
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -31,12 +32,14 @@
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll"
@@ -66,38 +69,33 @@
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/Unity.Locator.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.Properties.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Properties.Codegen.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Jobs.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Jobs.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Properties.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Collections.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Burst.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Properties.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Mathematics.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Entities.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Transforms.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Burst.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
--r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.2.3f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
 -r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
 -r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.3/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.dll
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Mdb.dll
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Pdb.dll
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Rocks.dll
+-r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+-r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
@@ -309,62 +307,39 @@
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
 -d:UNITY_POST_PROCESSING_STACK_V2
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/AI/A Star/NavigationMesh2D.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/AI/A Star/Pathfinder2D.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/AI/A Star/ShortcutPathfinder2D.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/ECS/Components.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/ECS/EntityManagerStarter.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Extensions.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/FPSPlayerMovement.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Object Pools/CubeTest.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Object Pools/ObjectPooler.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Object Pools/ObjectSpawner.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/ColorSettings.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/NoiseFilter.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/Planet.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/ShapeGenerator.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/ShapeSettings.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/SimplexNoise.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Planet Generator/TerrainFace.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Portal/Portal.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Portal/PortalRenderer.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/TextTest.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Tower/OrbitCamera.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Tower/PCoordMovement.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Tower/PolarCoordsTransform.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Tower/Radian.cs"
--i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Tower/Tower.cs"
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Attributes/DecoratorAttribute.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Attributes/PostProcessEditorAttribute.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/BaseEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Decorators/AttributeDecorator.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Decorators/Decorators.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Decorators/TrackballDecorator.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/EffectListEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/AmbientOcclusionEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/AutoExposureEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/BloomEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/ChromaticAberrationEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/ColorGradingEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/DefaultPostProcessEffectEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/DepthOfFieldEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/LensDistortionEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/ScreenSpaceReflectionsEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/VignetteEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessDebugEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessEffectBaseEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessEffectEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessLayerEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessProfileEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessVolumeEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/CubeLutAssetFactory.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/CubeLutAssetImporter.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/DefineSetter.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/ProfileFactory.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/ResourceAssetFactory.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/VolumeFactory.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/CurveEditor.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/EditorUtilities.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/GlobalSettings.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/SerializedParameterOverride.cs
+-i:C:/Users/ADMIRAL/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/Styling.cs
 -v:0

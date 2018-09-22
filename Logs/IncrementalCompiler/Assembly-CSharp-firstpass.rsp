@@ -25,6 +25,8 @@
 -r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Burst.Editor.dll"
 -r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
 -r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
+-r:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.3f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -305,6 +307,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-d:UNITY_POST_PROCESSING_STACK_V2
 -i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/Awaiters.cs"
 -i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/AwaitExtensions.cs"
 -i:"C:/Users/ADMIRAL/Documents/Unity Projects/Random-Unity-Stuff/Assets/Plugins/AsyncAwaitUtil/Source/IEnumeratorAwaitExtensions.cs"
