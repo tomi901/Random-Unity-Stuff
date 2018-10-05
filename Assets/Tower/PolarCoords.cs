@@ -5,16 +5,26 @@ using UnityEngine;
 public struct PolarCoords
 {
 
+    public static PolarCoords Zero { get { return default(PolarCoords); } }
+
     [SerializeField]
     private float radAngle;
     public float RadAngle { get { return radAngle; } set { radAngle = Radian.Clamp(value); } }
-    public float DegAngle { get { return radAngle * Mathf.Deg2Rad; } set { RadAngle = value * Mathf.Rad2Deg; } }
+    public float DegAngle { get { return radAngle * Mathf.Rad2Deg; } set { RadAngle = value * Mathf.Deg2Rad; } }
 
     [SerializeField]
     private float height;
     public float Height { get { return height; } set { height = value; } }
 
     public PolarCoords(float radAngle, float height) : this(radAngle, height, true)
+    {
+
+    }
+    public PolarCoords(Vector2 vector2) : this(vector2.x, vector2.y, true)
+    {
+
+    }
+    public PolarCoords(Vector2 vector2, float radius) : this(vector2.x / radius, vector2.y, true)
     {
 
     }
@@ -34,20 +44,6 @@ public struct PolarCoords
         return new Vector3(Mathf.Sin(radAngle) * radius, height, -Mathf.Cos(radAngle) * radius);
     }
 
-    public void Translate(Vector2 translate, float radius = 1f)
-    {
-        Translate(translate.x / radius, translate.y);
-    }
-    public void Translate(PolarCoords translate)
-    {
-        Translate(translate.radAngle, translate.height);
-    }
-    public void Translate(float rads, float height)
-    {
-        this.RadAngle += rads;
-        this.height += height;
-    }
-
     public static PolarCoords Lerp(PolarCoords from, PolarCoords to, float t)
     {
         return LerpUnclamped(from, to, Mathf.Clamp01(t));
@@ -63,7 +59,7 @@ public struct PolarCoords
 
 
     public static PolarCoords SmoothDamp(PolarCoords from, PolarCoords to, ref PolarCoords currentVelocity,
-    float smoothTime)
+        float smoothTime)
     {
         return SmoothDamp(from, to, ref currentVelocity, smoothTime, Time.deltaTime);
     }
@@ -78,14 +74,20 @@ public struct PolarCoords
     }
 
 
+    public static PolarCoords FromVector2(Vector2 vector2, float radius)
+    {
+        return new PolarCoords(vector2, radius);
+    }
+
+
     public static PolarCoords operator +(PolarCoords lhs, Vector2 rhs)
     {
-        lhs.Translate(rhs);
-        return lhs;
+        return lhs + new PolarCoords(rhs, 1f);
     }
     public static PolarCoords operator +(PolarCoords lhs, PolarCoords rhs)
     {
-        lhs.Translate(rhs.radAngle, rhs.height);
+        lhs.RadAngle += rhs.radAngle;
+        lhs.height += rhs.height;
         return lhs;
     }
 
@@ -98,13 +100,11 @@ public struct PolarCoords
     }
     public static PolarCoords operator -(PolarCoords lhs, Vector2 rhs)
     {
-        lhs.Translate(-rhs);
-        return lhs;
+        return lhs + (-rhs);
     }
     public static PolarCoords operator -(PolarCoords lhs, PolarCoords rhs)
     {
-        lhs.Translate(-rhs);
-        return lhs;
+        return lhs + (-rhs);
     }
 
 

@@ -16,8 +16,10 @@ public class Tower : MonoBehaviour
 
     [SerializeField]
     private float radius = 1f;
-    public float Radius { get { return radius; } }
-    public static float GetRadius { get { return singleton.radius; } }
+    public static float Radius { get { return Instance.radius; } }
+
+    public static Vector3 WorldPosition { get { return Instance.transform.position; } }
+
 
     private void Awake()
     {

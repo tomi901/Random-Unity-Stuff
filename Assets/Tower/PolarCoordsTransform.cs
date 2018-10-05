@@ -12,6 +12,9 @@ public class PolarCoordsTransform : MonoBehaviour
     private float separation = 0f;
     public virtual float Separation { get { return separation; } }
 
+    [SerializeField]
+    private bool updateRotation = false;
+
     private Vector3 relativePos;
     public Vector3 RelativePosition => relativePos;
     public Vector3 WorldPosition => transform.position;
@@ -19,18 +22,20 @@ public class PolarCoordsTransform : MonoBehaviour
 
     private void UpdatePosition()
     {
-        Tower tower = Tower.Instance;
-        float distance = tower.Radius + Separation;
+        float distance = Tower.Radius + Separation;
 
         relativePos = coords.GetPosition(distance);
-        transform.position = tower.transform.position + RelativePosition;
+        transform.position = Tower.WorldPosition + RelativePosition;
 
-        // TODO: Update Rotation
+        if (updateRotation)
+        {
+            transform.rotation = Quaternion.Euler(0, -coords.DegAngle, 0);
+        }
     }
 
     public void Translate(Vector2 movement)
     {
-        coords.Translate(movement, Tower.GetRadius + Separation);
+        coords += new PolarCoords(movement, Tower.Radius + Separation);
         UpdatePosition();
     }
 
